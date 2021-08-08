@@ -2,7 +2,9 @@
 
 This is a pure SwiftUI implementation of phone number TextField, which is highly customizable.
 
-<img src="preview.gif" alt="Preview" height="400" style="display: block; margin: 0 auto" />
+<p align="center">
+    <img src="preview.gif" alt="Preview" height="600" />
+</p>
 
 ## Minimal usage:
 ```swift
