@@ -35,7 +35,7 @@ SwiftUIPhoneNumber(countryCode: Binding<String>, phoneNumber: Binding<String>, h
 
 ### Some important notes:
 
-1. This library is just for iOS platfrom.
+1. This library is just for iOS 13 and above platfrom.
 2. Do not make height too small (passing height parameter). Find a suitable number and test it by giving various inputs(height).
 3. If in ZStack, make sure to set the outer view zIndex(1) or higher; e.g.,
 
