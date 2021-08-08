@@ -13,6 +13,7 @@ public struct SwiftUIPhoneNumber : View {
     @Binding var countryCode: String
     @Binding var phoneNumber: String
     
+    let placeholder: String
     let height: CGFloat
     let backgroundColor: Color
     let textColor: Color
@@ -25,10 +26,11 @@ public struct SwiftUIPhoneNumber : View {
     @State var countryFlag = ""
     @State var y: CGFloat = 0
     
-    public init(countryCode: Binding<String>, phoneNumber: Binding<String>, height: CGFloat = 600, backgroundColor: Color = Color.white, textColor: Color = Color.black, textFont: Font = Font.body, titleColor: Color = Color.black, countryColor: Color = Color.black, titleFont: Font = Font.title, countryFont: Font = Font.body) {
+    public init(countryCode: Binding<String>, phoneNumber: Binding<String>, placeholder: String = "Phone Number", height: CGFloat = 600, backgroundColor: Color = Color.white, textColor: Color = Color.black, textFont: Font = Font.body, titleColor: Color = Color.black, countryColor: Color = Color.black, titleFont: Font = Font.title, countryFont: Font = Font.body) {
         self._countryCode = countryCode
         self._phoneNumber = phoneNumber
         
+        self.placeholder = placeholder
         self.height = height
         self.backgroundColor = backgroundColor
         self.textColor = textColor
@@ -51,7 +53,7 @@ public struct SwiftUIPhoneNumber : View {
                         }
                     }
                 
-                TextField("Phone Number", text: $phoneNumber)
+                TextField(placeholder, text: $phoneNumber)
                     .keyboardType(.phonePad)
                     .foregroundColor(textColor)
                     .font(textFont)

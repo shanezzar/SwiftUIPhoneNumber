@@ -27,7 +27,7 @@ It takes country code (without +) and phone number. The code can be further cust
 ```swift
 
 // 
-SwiftUIPhoneNumber(countryCode: Binding<String>, phoneNumber: Binding<String>, height: CGFloat, backgroundColor: Color, textColor: Color, textFont: Font, titleColor: Color, countryColor: Color, titleFont: Font, countryFont: Font)
+SwiftUIPhoneNumber(countryCode: Binding<String>, phoneNumber: Binding<String>, placeholder: String, height: CGFloat, backgroundColor: Color, textColor: Color, textFont: Font, titleColor: Color, countryColor: Color, titleFont: Font, countryFont: Font)
 
 ```
 
