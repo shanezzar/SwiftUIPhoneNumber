@@ -2,15 +2,14 @@
 
 This is a pure SwiftUI implementation of phone number TextField, which is highly customizable.
 
-![alt text](preview.gif)
-
+<img src="preview.gif" alt="Preview" height="400" style="display: block; margin: 0 auto" />
 
 ## Minimal usage:
 ```swift
 
 //
 @State var countryCode = ""
-@State var phoneNumber = UserModel.shared.phoneNumber
+@State var phoneNumber = ""
 
 // 
 SwiftUIPhoneNumber(countryCode: $countryCode, phoneNumber: $phoneNumber)
