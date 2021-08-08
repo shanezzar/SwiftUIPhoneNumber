@@ -4,6 +4,7 @@ This is a pure SwiftUI implementation of phone number TextField, which is highly
 
 ![alt text](preview.gif)
 
+
 ## Minimal usage:
 ```swift
 
@@ -19,13 +20,17 @@ SwiftUIPhoneNumber(countryCode: $countryCode, phoneNumber: $phoneNumber)
 It takes country code (without +) and phone number. The code can be further customized by implementing extended functions like regex/validation etc. to the phone number.
 
 
+
+
 ## Full implementation:
 ```swift
 
 // 
-SwiftUIPhoneNumber(countryCode: <#T##Binding<String>#>, phoneNumber: <#T##Binding<String>#>, height: <#T##CGFloat#>, backgroundColor: <#T##Color#>, textColor: <#T##Color#>, textFont: <#T##Font#>, titleColor: <#T##Color#>, countryColor: <#T##Color#>, titleFont: <#T##Font#>, countryFont: <#T##Font#>)
+SwiftUIPhoneNumber(countryCode: Binding<String>, phoneNumber: Binding<String>, height: CGFloat, backgroundColor: Color, textColor: Color, textFont: Font, titleColor: Color, countryColor: Color, titleFont: Font, countryFont: Font)
 
 ```
+
+
 
 ### Some important notes:
 
@@ -43,5 +48,6 @@ HStack {
 .zIndex(1) // <- THIS
 
 ```
+
 
 [@shanezzar](https://www.shanezzar.com).
