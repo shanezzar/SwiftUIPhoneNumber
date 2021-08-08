@@ -87,7 +87,7 @@ public struct CountryCodes : View {
                             .padding()
                     })
                 }
-                .padding()
+                .padding(24)
 
                 Divider()
                     .padding(.top, -8)
